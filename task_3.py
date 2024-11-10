@@ -13,3 +13,12 @@ print('Задача 3. Рамка')
 # |                 |
 # |                 |
 # |_ _ _ _ _ _ _ _ _|
+
+
+height = int(input("Введите высоту рамки:\n"))
+width = int(input("Введите ширину рамки:\n"))
+
+print("-" * width)
+for row in range(height):
+    print("|", "|", sep = " " * (width - 2))
+print("-" * width)
